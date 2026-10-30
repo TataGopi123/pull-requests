@@ -24,6 +24,7 @@ output application/json
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="2011d666-7e85-44fb-969a-a1d5db19b39c" message="Main flow ended"/>
 	</flow>
 	<sub-flow name="flowsSub_Flow" doc:id="ed86bfa4-3603-4e85-9e58-670616344fac" >
 		<set-payload value='#[vars.data]' doc:name="Set Payload" doc:id="91e23304-7a65-43b1-90b1-1c640f6cebb9" />
